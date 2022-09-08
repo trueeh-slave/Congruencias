@@ -14,18 +14,18 @@ public class Congruencias {
                             "\n 2. Salir"));
                     switch (menu){
                         case 1:
-                            BigInteger numero1 = BigInteger.valueOf(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el primer numero")));
-                            if(numero1.compareTo(new BigInteger("0")) < 0){
+                            BigInteger numero1 = new BigInteger(JOptionPane.showInputDialog("Ingrese el primer numero"));
+                            if(numero1.compareTo(new BigInteger("0")) < -1){
                                 JOptionPane.showMessageDialog(null,"Ingrese un valor positivo");
                                 break;
                             }
-                            BigInteger numero2 = BigInteger.valueOf(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el segundo numero")));
-                            if(numero2.compareTo(new BigInteger("0")) < 0){
+                            BigInteger numero2 = new BigInteger(JOptionPane.showInputDialog("Ingrese el segundo numero"));
+                            if(numero2.compareTo(new BigInteger("0")) < -1){
                                 JOptionPane.showMessageDialog(null,"Ingrese un valor positivo");
                                 break;
                             }
-                            BigInteger modulo = BigInteger.valueOf(Integer.parseInt(JOptionPane.showInputDialog("Ingrese el modulo")));
-                            if(modulo.compareTo(new BigInteger("0")) < 0){
+                            BigInteger modulo = new BigInteger(JOptionPane.showInputDialog("Ingrese el modulo"));
+                            if(modulo.compareTo(new BigInteger("0")) < -1){
                                 JOptionPane.showMessageDialog(null,"Ingrese un valor positivo");
                                 break;
                             }
